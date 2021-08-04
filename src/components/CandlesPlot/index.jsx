@@ -104,8 +104,8 @@ const CandlesPlot = () => {
       low: getLow(stepsize),
       open: getOpen(stepsize),
       type: 'candlestick',
-      // offset: 0,
-      // width: barUnitWidth * stepsize,
+      offset: 0, // <----- Desired Feature
+      width: barUnitWidth * stepsize, // <----- Desired Feature
       name: getTitle(stepsize),
       yaxis: `y${stepsize === 1 ? '' : stepsize}`,
     };
@@ -120,8 +120,8 @@ const CandlesPlot = () => {
       },
       opacity: 0.2,
       type: 'bar',
-      offset: 0,
-      width: barUnitWidth * stepsize,
+      offset: 0, // <--- Feature exists for type 'bar'
+      width: barUnitWidth * stepsize, // <--- Feature exists for type 'bar'
       name: getTitle(stepsize),
       yaxis: `y${stepsize + numSubplots}`,
     };
