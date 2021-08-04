@@ -1,3 +1,9 @@
+# React Plotly Example
+This project is an example to show mutiple subplots, each with candles and volume.
+In this example, the volume traces are type 'bar' and we edit the attributes 'offset' and 'width', 
+however, the type 'candlestick' lacks the attributes 'offset' and 'width' which is a
+desired feature.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
